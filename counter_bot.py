@@ -1,7 +1,7 @@
 import discord
 import json
 
-keywords = ["höhö", "nenene", "do hond", "<:]", "niemals", ": >", "altaaa"]
+keywords = ["word1", "word2", "word3"]
 
 
 class MyClient(discord.Client):
@@ -40,8 +40,8 @@ class MyClient(discord.Client):
             if message.content in keywords:
                 self.add_score(author, 0.01)
                 await message.channel.send(
-                    message.content + " ??? " + author.mention + " Muss 1ct bezahlen. Damit hat " + author.name
-                    + " nun Schulden von insgesamt " + str(round(self.get_score(author), 3)) + "€!")
+                    message.content + " ??? " + author.mention + " Must pay 1ct." + author.name
+                    + "'s debts are now " + str(round(self.get_score(author), 3)) + "€!")
 
 
 client = MyClient()
