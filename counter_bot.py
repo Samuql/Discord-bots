@@ -1,5 +1,5 @@
 import discord
-import json
+import json # needs a Json File "users.json" to work
 
 keywords = ["word1", "word2", "word3"]
 
