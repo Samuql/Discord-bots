@@ -45,4 +45,4 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run("TOKEN")  # that's the client token. don't share it
+client.run("TOKEN")
